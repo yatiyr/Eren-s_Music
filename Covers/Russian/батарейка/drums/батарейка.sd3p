@@ -2030,7 +2030,6 @@ alias crash4RT 51 113
 alias crash4RD 29 116
 alias crash4BL 53 114
 alias crash4BT 30 117
-alias crash4CS 76
 }
 }
 }
@@ -2935,7 +2934,7 @@ active 1
 solo 0
 mute 0
 username "Snare"
-route 0
+route 1
 }
 buss 3 {
 pan 1
@@ -2943,7 +2942,7 @@ volume 1.00099
 phasereverse 0
 solo 0
 mute 0
-route 0
+route 1
 }
 buss 4 {
 pan 0
@@ -2972,7 +2971,7 @@ active 1
 solo 0
 mute 0
 username "Toms"
-route 0
+route 2
 }
 buss 5 {
 pan 1
@@ -2980,7 +2979,7 @@ volume 0.846841
 phasereverse 0
 solo 0
 mute 0
-route 0
+route 2
 }
 buss 6 {
 pan 0
@@ -2989,7 +2988,7 @@ phasereverse 0
 solo 0
 mute 0
 username "Hi-Hat"
-route 0
+route 3
 }
 buss 7 {
 pan 1
@@ -2997,7 +2996,7 @@ volume 1
 phasereverse 0
 solo 0
 mute 0
-route 0
+route 3
 }
 buss 8 {
 pan 0
@@ -3006,7 +3005,7 @@ phasereverse 0
 solo 0
 mute 0
 username "Cymbals"
-route 0
+route 4
 }
 buss 9 {
 pan 1
@@ -3014,7 +3013,7 @@ volume 1
 phasereverse 0
 solo 0
 mute 0
-route 0
+route 4
 }
 buss 10 {
 pan 0
@@ -3023,7 +3022,7 @@ phasereverse 0
 solo 0
 mute 0
 username "Ambience"
-route 0
+route 5
 }
 buss 11 {
 pan 1
@@ -3031,7 +3030,7 @@ volume 0.909119
 phasereverse 0
 solo 0
 mute 0
-route 0
+route 5
 }
 buss 12 {
 pan 0
@@ -3039,8 +3038,7 @@ volume 1
 phasereverse 0
 solo 0
 mute 0
-hidden
-route -1
+route 0
 }
 buss 13 {
 pan 1
@@ -3048,7 +3046,7 @@ volume 1
 phasereverse 0
 solo 0
 mute 0
-route -1
+route 0
 }
 buss 14 {
 pan 0
@@ -3310,9 +3308,112 @@ output 2 {
 pan 0
 volume 1
 phasereverse 0
+effect 0 {
+sidechain ""
+effect 16
+active 1
+0 0.18
+1 0.28
+2 0.5
+}
+effect 1 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.463925
+2 0.614496
+3 0.5
+4 0
+10 0
+11 0
+12 0
+13 0.444444
+14 0.641895
+15 0.125018
+16 0.5
+17 0
+23 0
+24 0
+25 0
+26 0.444444
+27 0.463925
+28 0.114423
+29 0.5
+30 0
+36 0
+37 0
+38 0
+39 0.444444
+40 0.281145
+41 0.0508548
+42 0.5
+43 0
+49 0
+50 0
+51 0
+52 0.444444
+53 0.584175
+54 0.152564
+55 0.5
+56 0
+62 0
+63 0
+64 0
+65 0.444444
+66 0.415825
+67 0.351746
+68 0.5
+69 0
+75 0
+76 0
+77 0
+78 0.444444
+79 0.423545
+80 0.752953
+81 0.5
+82 0
+88 0
+89 0
+90 0
+91 0.444444
+92 0.300385
+93 0.756465
+94 0.5
+95 0
+101 0
+102 0
+103 0
+104 0.444444
+105 0.651515
+106 0.843342
+107 0.5
+108 0
+114 0
+115 0
+116 0
+129 0.75
+130 0.5
+}
+effect 2 {
+sidechain ""
+effect 41
+active 1
+0 0.35
+1 0.17
+2 0
+3 0
+4 0.35
+5 0.17
+6 0
+7 0
+8 0.52
+9 0.5
+10 0
+linked
+}
 solo 0
 mute 0
-hidden
 }
 output 3 {
 pan 1
@@ -3325,9 +3426,56 @@ output 4 {
 pan 0
 volume 1
 phasereverse 0
+effect 0 {
+sidechain ""
+effect 16
+active 1
+0 0.5
+1 0.5
+2 0.5
+}
+effect 1 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.5
+2 0.566323
+3 0.5
+4 0
+10 0
+11 0
+12 0
+25 0.75
+38 0.75
+51 0.75
+64 0.75
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+effect 2 {
+sidechain ""
+effect 41
+active 1
+0 0.3
+1 0
+2 0.5
+3 0.2
+4 0.3
+5 0
+6 0.5
+7 0.2
+8 1
+9 0.5
+10 0
+linked
+}
 solo 0
 mute 0
-hidden
 }
 output 5 {
 pan 1
@@ -3340,9 +3488,56 @@ output 6 {
 pan 0
 volume 1
 phasereverse 0
+effect 0 {
+sidechain ""
+effect 16
+active 1
+0 0.5
+1 0.5
+2 0.5
+}
+effect 1 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.5
+2 0.566323
+3 0.5
+4 0
+10 0
+11 0
+12 0
+25 0.75
+38 0.75
+51 0.75
+64 0.75
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+effect 2 {
+sidechain ""
+effect 41
+active 1
+0 0.3
+1 0
+2 0.5
+3 0.2
+4 0.3
+5 0
+6 0.5
+7 0.2
+8 1
+9 0.5
+10 0
+linked
+}
 solo 0
 mute 0
-hidden
 }
 output 7 {
 pan 1
@@ -3355,9 +3550,56 @@ output 8 {
 pan 0
 volume 1
 phasereverse 0
+effect 0 {
+sidechain ""
+effect 16
+active 1
+0 0.5
+1 0.5
+2 0.5
+}
+effect 1 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.5
+2 0.566323
+3 0.5
+4 0
+10 0
+11 0
+12 0
+25 0.75
+38 0.75
+51 0.75
+64 0.75
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+effect 2 {
+sidechain ""
+effect 41
+active 1
+0 0.3
+1 0
+2 0.5
+3 0.2
+4 0.3
+5 0
+6 0.5
+7 0.2
+8 1
+9 0.5
+10 0
+linked
+}
 solo 0
 mute 0
-hidden
 }
 output 9 {
 pan 1
@@ -3370,9 +3612,56 @@ output 10 {
 pan 0
 volume 1
 phasereverse 0
+effect 0 {
+sidechain ""
+effect 16
+active 1
+0 0.5
+1 0.5
+2 0.5
+}
+effect 1 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.5
+2 0.566323
+3 0.5
+4 0
+10 0
+11 0
+12 0
+25 0.75
+38 0.75
+51 0.75
+64 0.75
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+effect 2 {
+sidechain ""
+effect 41
+active 1
+0 0.3
+1 0
+2 0.5
+3 0.2
+4 0.3
+5 0
+6 0.5
+7 0.2
+8 1
+9 0.5
+10 0
+linked
+}
 solo 0
 mute 0
-hidden
 }
 output 11 {
 pan 1
@@ -3542,8 +3831,8 @@ SongTrack 0 {
 Minimized 0
 ClearTrackFirst
 TrackLength 800
-VisibleArea 0.0208333 228.239
-Zoom 7.12
+VisibleArea 0 84.8826
+Zoom 12.64
 Tempo 120 0 0
 TimeSig 4 4 0
 KeySign 0 1 0 0
@@ -3551,10 +3840,10 @@ TrackName "Track 1"
 MutedCCs 
 ClearSongParts
 GridRes 32
-LoopArea 1.5 2
+LoopArea -1 -1
 LoopActive 0
 StartNumber 1
-PlayHeadPos 3.85542
+PlayHeadPos 0
 MidiLoop 0 {
 Name "Empty Block"
 RealEndTime 16
@@ -3576,6 +3865,20 @@ KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -3621,7 +3924,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -3645,14 +3948,28 @@ ClearNotes
 TimeSig 4 4
 MidiEvents { 
 EndTime 16
-Events 5907600 0 0.05 4668816 0 0.05 8337808 0 0.05 8335760 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6438288 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 6241680 3 3.05 6438288 3.5 3.55 
-Events 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 6438288 6 6.05 8332432 6 6.05 6438288 6.5 6.55 8332944 6.5 6.55 7621520 7 7.05 4930960 7 7.05 7883664 7.25 7.3 6762640 7.5 7.55 
+Events 5907600 0 0.05 8335760 0 0.05 8337808 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6438288 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 6241680 3 3.05 6438288 3.5 3.55 
+Events 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 8332432 6 6.05 6438288 6 6.05 8332944 6.5 6.55 6438288 6.5 6.55 4930960 7 7.05 7621520 7 7.05 7883664 7.25 7.3 6762640 7.5 7.55 
 Events 7221392 7.75 7.8 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 6104720 11 11.05 6241680 11 11.05 6438288 11.5 11.55 
 Events 6497424 12 12.05 4668816 12 12.05 6307216 12.5 12.55 6825616 13 13.05 5258640 13 13.05 5520784 13.5 13.55 4603792 13.75 13.8 4859024 14 14.05 6438288 14 14.05 6497424 14.5 14.55 6438288 14.5 14.55 6825616 15 15.05 4930960 15 15.05 6241680 15.5 15.55 8339344 15.75 15.8 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -3698,7 +4015,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -3723,11 +4040,25 @@ TimeSig 4 4
 MidiEvents { 
 EndTime 8
 Events 8336272 0 0.05 6111120 0 0.05 4669328 0.5 0.55 8332688 1 1.05 6504336 1 1.05 4210576 1.5 1.55 6242192 2 2.05 4276112 2.5 2.55 8332688 3 3.05 6373264 3 3.05 4800400 3.5 3.55 6569872 4 4.05 4341648 4.5 4.55 6366608 5 5.05 6307728 5 5.05 3948432 5.5 5.55 
-Events 6569872 6 6.05 3948432 6.5 6.55 8329360 6.5 6.55 6366608 7 7.05 6373264 7 7.05 3610256 7.5 7.55 
+Events 6569872 6 6.05 8329360 6.5 6.55 3948432 6.5 6.55 6366608 7 7.05 6373264 7 7.05 3610256 7.5 7.55 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle -3027531
@@ -3773,7 +4104,7 @@ From "Hi-Hat Tight Tip"
 To "Hi-Hat Tight Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 63
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -3798,11 +4129,25 @@ TimeSig 4 4
 MidiEvents { 
 EndTime 8
 Events 8336272 0 0.05 6111120 0 0.05 4669328 0.5 0.55 8332688 1 1.05 6504336 1 1.05 4210576 1.5 1.55 6242192 2 2.05 4276112 2.5 2.55 8332688 3 3.05 6373264 3 3.05 4800400 3.5 3.55 6569872 4 4.05 4341648 4.5 4.55 6366608 5 5.05 6307728 5 5.05 3948432 5.5 5.55 
-Events 6569872 6 6.05 3948432 6.5 6.55 8329360 6.5 6.55 6366608 7 7.05 6373264 7 7.05 3610256 7.5 7.55 
+Events 6569872 6 6.05 8329360 6.5 6.55 3948432 6.5 6.55 6366608 7 7.05 6373264 7 7.05 3610256 7.5 7.55 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle -3027531
@@ -3848,7 +4193,7 @@ From "Hi-Hat Tight Tip"
 To "Hi-Hat Tight Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 63
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -3873,11 +4218,25 @@ TimeSig 4 4
 MidiEvents { 
 EndTime 8
 Events 6111120 0 0.05 4669328 0.5 0.55 8332688 1 1.05 6504336 1 1.05 4210576 1.5 1.55 6242192 2 2.05 4276112 2.5 2.55 8332688 3 3.05 6373264 3 3.05 4800400 3.5 3.55 6569872 4 4.05 4341648 4.5 4.55 6366608 5 5.05 6307728 5 5.05 3948432 5.5 5.55 6569872 6 6.05 
-Events 3948432 6.5 6.55 8329360 6.5 6.55 6366608 7 7.05 6373264 7 7.05 3610256 7.5 7.55 
+Events 8329360 6.5 6.55 3948432 6.5 6.55 6366608 7 7.05 6373264 7 7.05 3610256 7.5 7.55 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle -3027531
@@ -3923,7 +4282,7 @@ From "Hi-Hat Tight Tip"
 To "Hi-Hat Tight Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 63
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -3947,12 +4306,26 @@ ClearNotes
 TimeSig 4 4
 MidiEvents { 
 EndTime 8
-Events 6111120 0 0.05 4669328 0.5 0.55 6956432 1 1.05 6504336 1 1.05 4210576 1.5 1.55 6242192 2 2.05 4276112 2.5 2.55 6956432 3 3.05 6373264 3 3.05 4800400 3.5 3.55 6569872 4 4.05 8337808 4 4.05 8335760 4 4.05 4341648 4.5 4.55 8337808 4.5 4.55 8335760 4.5 4.55 
-Events 6307728 5 5.05 6956688 5 5.05 3948432 5.5 5.55 6238352 5.5 5.55 6237072 5.75 5.8 6569872 6 6.05 6956688 6 6.05 3948432 6.5 6.55 8329360 6.5 6.55 5776784 7 7.05 6373264 7 7.05 6238352 7.25 7.3 6237072 7.5 7.55 3610256 7.5 7.55 
+Events 6111120 0 0.05 4669328 0.5 0.55 6956432 1 1.05 6504336 1 1.05 4210576 1.5 1.55 6242192 2 2.05 4276112 2.5 2.55 6956432 3 3.05 6373264 3 3.05 4800400 3.5 3.55 8335760 4 4.05 8337808 4 4.05 6569872 4 4.05 8335760 4.5 4.55 8337808 4.5 4.55 4341648 4.5 4.55 
+Events 6956688 5 5.05 6307728 5 5.05 6238352 5.5 5.55 3948432 5.5 5.55 6237072 5.75 5.8 6956688 6 6.05 6569872 6 6.05 8329360 6.5 6.55 3948432 6.5 6.55 5776784 7 7.05 6373264 7 7.05 6238352 7.25 7.3 3610256 7.5 7.55 6237072 7.5 7.55 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle -3027531
@@ -3998,7 +4371,7 @@ From "Hi-Hat Tight Tip"
 To "Hi-Hat Tight Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 63
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4030,6 +4403,20 @@ KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -4075,7 +4462,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4108,6 +4495,20 @@ KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -4153,7 +4554,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4177,15 +4578,29 @@ ClearNotes
 TimeSig 4 4
 MidiEvents { 
 EndTime 16
-Events 5907600 0 0.05 7614864 0 0.05 7485840 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6438288 2 2.05 6371728 2 2.05 6500752 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 
+Events 5907600 0 0.05 7614864 0 0.05 7485840 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6500752 2 2.05 6371728 2 2.05 6438288 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 
 Events 6241680 3 3.05 6438288 3.5 3.55 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 4859024 6 6.05 6438288 6 6.05 6497424 6.5 6.55 6438288 6.5 6.55 6825616 7 7.05 4930960 7 7.05 
-Events 7485840 7.5 7.55 7483792 7.5 7.55 6231696 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 6104720 11 11.05 
+Events 6231696 7.5 7.55 7483792 7.5 7.55 7485840 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 6104720 11 11.05 
 Events 6241680 11 11.05 6438288 11.5 11.55 6497424 12 12.05 4668816 12 12.05 6307216 12.5 12.55 6825616 13 13.05 5258640 13 13.05 5520784 13.5 13.55 4603792 13.75 13.8 4859024 14 14.05 6438288 14 14.05 6497424 14.5 14.55 6438288 14.5 14.55 6825616 15 15.05 4930960 15 15.05 6241680 15.5 15.55 
 Events 8339344 15.75 15.8 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -4231,7 +4646,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4256,14 +4671,28 @@ TimeSig 4 4
 MidiEvents { 
 EndTime 16
 Events 5907600 0 0.05 7614864 0 0.05 7485840 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6438288 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 6241680 3 3.05 6438288 3.5 3.55 
-Events 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 4859024 6 6.05 6438288 6 6.05 7485840 6 6.05 7483792 6 6.05 6497424 6.5 6.55 6438288 6.5 6.55 7485840 6.5 6.55 7483792 6.5 6.55 
-Events 6825616 7 7.05 4930960 7 7.05 8335504 7.5 7.55 6231696 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 
+Events 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 4859024 6 6.05 7483792 6 6.05 7485840 6 6.05 6438288 6 6.05 6497424 6.5 6.55 7483792 6.5 6.55 7485840 6.5 6.55 6438288 6.5 6.55 
+Events 6825616 7 7.05 4930960 7 7.05 6231696 7.5 7.55 8335504 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 
 Events 6104720 11 11.05 6241680 11 11.05 6438288 11.5 11.55 6497424 12 12.05 4668816 12 12.05 6307216 12.5 12.55 6825616 13 13.05 5258640 13 13.05 5520784 13.5 13.55 4603792 13.75 13.8 4859024 14 14.05 6438288 14 14.05 6497424 14.5 14.55 6438288 14.5 14.55 6825616 15 15.05 4930960 15 15.05 
 Events 6241680 15.5 15.55 8339344 15.75 15.8 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -4309,7 +4738,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4334,11 +4763,25 @@ TimeSig 4 4
 MidiEvents { 
 EndTime 8
 Events 8336272 0 0.05 6111120 0 0.05 4669328 0.5 0.55 8332688 1 1.05 6504336 1 1.05 4210576 1.5 1.55 6242192 2 2.05 4276112 2.5 2.55 8332688 3 3.05 6373264 3 3.05 4800400 3.5 3.55 6569872 4 4.05 4341648 4.5 4.55 6366608 5 5.05 6307728 5 5.05 3948432 5.5 5.55 
-Events 6569872 6 6.05 3948432 6.5 6.55 8329360 6.5 6.55 6366608 7 7.05 6373264 7 7.05 3610256 7.5 7.55 
+Events 6569872 6 6.05 8329360 6.5 6.55 3948432 6.5 6.55 6366608 7 7.05 6373264 7 7.05 3610256 7.5 7.55 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle -3027531
@@ -4384,7 +4827,7 @@ From "Hi-Hat Tight Tip"
 To "Hi-Hat Tight Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 63
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4409,11 +4852,25 @@ TimeSig 4 4
 MidiEvents { 
 EndTime 8
 Events 8336272 0 0.05 6111120 0 0.05 4669328 0.5 0.55 8332688 1 1.05 6504336 1 1.05 4210576 1.5 1.55 6242192 2 2.05 4276112 2.5 2.55 8332688 3 3.05 6373264 3 3.05 4800400 3.5 3.55 6569872 4 4.05 4341648 4.5 4.55 6366608 5 5.05 6307728 5 5.05 3948432 5.5 5.55 
-Events 6569872 6 6.05 3948432 6.5 6.55 8329360 6.5 6.55 6366608 7 7.05 6373264 7 7.05 3610256 7.5 7.55 
+Events 6569872 6 6.05 8329360 6.5 6.55 3948432 6.5 6.55 6366608 7 7.05 6373264 7 7.05 3610256 7.5 7.55 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle -3027531
@@ -4459,7 +4916,7 @@ From "Hi-Hat Tight Tip"
 To "Hi-Hat Tight Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 63
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4484,11 +4941,25 @@ TimeSig 4 4
 MidiEvents { 
 EndTime 8
 Events 6111120 0 0.05 4669328 0.5 0.55 8332688 1 1.05 6504336 1 1.05 4210576 1.5 1.55 6242192 2 2.05 4276112 2.5 2.55 8332688 3 3.05 6373264 3 3.05 4800400 3.5 3.55 6569872 4 4.05 4341648 4.5 4.55 6366608 5 5.05 6307728 5 5.05 3948432 5.5 5.55 6569872 6 6.05 
-Events 3948432 6.5 6.55 8329360 6.5 6.55 6366608 7 7.05 6373264 7 7.05 3610256 7.5 7.55 
+Events 8329360 6.5 6.55 3948432 6.5 6.55 6366608 7 7.05 6373264 7 7.05 3610256 7.5 7.55 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle -3027531
@@ -4534,7 +5005,7 @@ From "Hi-Hat Tight Tip"
 To "Hi-Hat Tight Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 63
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4558,12 +5029,26 @@ ClearNotes
 TimeSig 4 4
 MidiEvents { 
 EndTime 8
-Events 6111120 0 0.05 4669328 0.5 0.55 6956432 1 1.05 6504336 1 1.05 4210576 1.5 1.55 6242192 2 2.05 4276112 2.5 2.55 6956432 3 3.05 6373264 3 3.05 4800400 3.5 3.55 6569872 4 4.05 8337808 4 4.05 8335760 4 4.05 4341648 4.5 4.55 8337808 4.5 4.55 8335760 4.5 4.55 
-Events 6307728 5 5.05 6956688 5 5.05 3948432 5.5 5.55 6238352 5.5 5.55 6237072 5.75 5.8 6569872 6 6.05 6956688 6 6.05 3948432 6.5 6.55 8329360 6.5 6.55 5776784 7 7.05 6373264 7 7.05 6238352 7.25 7.3 6237072 7.5 7.55 3610256 7.5 7.55 
+Events 6111120 0 0.05 4669328 0.5 0.55 6956432 1 1.05 6504336 1 1.05 4210576 1.5 1.55 6242192 2 2.05 4276112 2.5 2.55 6956432 3 3.05 6373264 3 3.05 4800400 3.5 3.55 8335760 4 4.05 8337808 4 4.05 6569872 4 4.05 8335760 4.5 4.55 8337808 4.5 4.55 4341648 4.5 4.55 
+Events 6956688 5 5.05 6307728 5 5.05 6238352 5.5 5.55 3948432 5.5 5.55 6237072 5.75 5.8 6956688 6 6.05 6569872 6 6.05 8329360 6.5 6.55 3948432 6.5 6.55 5776784 7 7.05 6373264 7 7.05 6238352 7.25 7.3 3610256 7.5 7.55 6237072 7.5 7.55 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle -3027531
@@ -4609,7 +5094,7 @@ From "Hi-Hat Tight Tip"
 To "Hi-Hat Tight Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 63
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4642,6 +5127,20 @@ KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -4687,7 +5186,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4719,6 +5218,20 @@ KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -4764,7 +5277,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4788,15 +5301,29 @@ ClearNotes
 TimeSig 4 4
 MidiEvents { 
 EndTime 16
-Events 5907600 0 0.05 7614864 0 0.05 7485840 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6438288 2 2.05 6371728 2 2.05 6500752 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 
+Events 5907600 0 0.05 7614864 0 0.05 7485840 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6500752 2 2.05 6371728 2 2.05 6438288 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 
 Events 6241680 3 3.05 6438288 3.5 3.55 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 4859024 6 6.05 6438288 6 6.05 6497424 6.5 6.55 6438288 6.5 6.55 6825616 7 7.05 4930960 7 7.05 
-Events 7485840 7.5 7.55 7483792 7.5 7.55 6231696 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 6104720 11 11.05 
+Events 6231696 7.5 7.55 7483792 7.5 7.55 7485840 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 6104720 11 11.05 
 Events 6241680 11 11.05 6438288 11.5 11.55 6497424 12 12.05 4668816 12 12.05 6307216 12.5 12.55 6825616 13 13.05 5258640 13 13.05 5520784 13.5 13.55 4603792 13.75 13.8 4859024 14 14.05 6438288 14 14.05 6497424 14.5 14.55 6438288 14.5 14.55 6825616 15 15.05 4930960 15 15.05 6241680 15.5 15.55 
 Events 8339344 15.75 15.8 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -4842,7 +5369,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4867,14 +5394,28 @@ TimeSig 4 4
 MidiEvents { 
 EndTime 16
 Events 5907600 0 0.05 7614864 0 0.05 7485840 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6438288 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 6241680 3 3.05 6438288 3.5 3.55 
-Events 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 4859024 6 6.05 6438288 6 6.05 7485840 6 6.05 7483792 6 6.05 6497424 6.5 6.55 6438288 6.5 6.55 7485840 6.5 6.55 7483792 6.5 6.55 
-Events 6825616 7 7.05 4930960 7 7.05 8335504 7.5 7.55 6231696 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 
+Events 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 4859024 6 6.05 7483792 6 6.05 7485840 6 6.05 6438288 6 6.05 6497424 6.5 6.55 7483792 6.5 6.55 7485840 6.5 6.55 6438288 6.5 6.55 
+Events 6825616 7 7.05 4930960 7 7.05 6231696 7.5 7.55 8335504 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 
 Events 6104720 11 11.05 6241680 11 11.05 6438288 11.5 11.55 6497424 12 12.05 4668816 12 12.05 6307216 12.5 12.55 6825616 13 13.05 5258640 13 13.05 5520784 13.5 13.55 4603792 13.75 13.8 4859024 14 14.05 6438288 14 14.05 6497424 14.5 14.55 6438288 14.5 14.55 6825616 15 15.05 4930960 15 15.05 
 Events 6241680 15.5 15.55 8339344 15.75 15.8 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -4920,7 +5461,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -4952,6 +5493,20 @@ KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -4997,7 +5552,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -5029,6 +5584,20 @@ KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -5074,7 +5643,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -5098,15 +5667,29 @@ ClearNotes
 TimeSig 4 4
 MidiEvents { 
 EndTime 16
-Events 5907600 0 0.05 7614864 0 0.05 7485840 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6438288 2 2.05 6371728 2 2.05 6500752 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 
+Events 5907600 0 0.05 7614864 0 0.05 7485840 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6500752 2 2.05 6371728 2 2.05 6438288 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 
 Events 6241680 3 3.05 6438288 3.5 3.55 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 4859024 6 6.05 6438288 6 6.05 6497424 6.5 6.55 6438288 6.5 6.55 6825616 7 7.05 4930960 7 7.05 
-Events 7485840 7.5 7.55 7483792 7.5 7.55 6231696 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 6104720 11 11.05 
+Events 6231696 7.5 7.55 7483792 7.5 7.55 7485840 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 6104720 11 11.05 
 Events 6241680 11 11.05 6438288 11.5 11.55 6497424 12 12.05 4668816 12 12.05 6307216 12.5 12.55 6825616 13 13.05 5258640 13 13.05 5520784 13.5 13.55 4603792 13.75 13.8 4859024 14 14.05 6438288 14 14.05 6497424 14.5 14.55 6438288 14.5 14.55 6825616 15 15.05 4930960 15 15.05 6241680 15.5 15.55 
 Events 8339344 15.75 15.8 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -5152,7 +5735,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -5177,14 +5760,28 @@ TimeSig 4 4
 MidiEvents { 
 EndTime 16
 Events 5907600 0 0.05 7614864 0 0.05 7485840 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6438288 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 6241680 3 3.05 6438288 3.5 3.55 
-Events 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 4859024 6 6.05 6438288 6 6.05 7485840 6 6.05 7483792 6 6.05 6497424 6.5 6.55 6438288 6.5 6.55 7485840 6.5 6.55 7483792 6.5 6.55 
-Events 6825616 7 7.05 4930960 7 7.05 8335504 7.5 7.55 6231696 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 
+Events 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 4859024 6 6.05 7483792 6 6.05 7485840 6 6.05 6438288 6 6.05 6497424 6.5 6.55 7483792 6.5 6.55 7485840 6.5 6.55 6438288 6.5 6.55 
+Events 6825616 7 7.05 4930960 7 7.05 6231696 7.5 7.55 8335504 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 
 Events 6104720 11 11.05 6241680 11 11.05 6438288 11.5 11.55 6497424 12 12.05 4668816 12 12.05 6307216 12.5 12.55 6825616 13 13.05 5258640 13 13.05 5520784 13.5 13.55 4603792 13.75 13.8 4859024 14 14.05 6438288 14 14.05 6497424 14.5 14.55 6438288 14.5 14.55 6825616 15 15.05 4930960 15 15.05 
 Events 6241680 15.5 15.55 8339344 15.75 15.8 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -5230,7 +5827,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -5262,6 +5859,20 @@ KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -5307,7 +5918,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -5340,6 +5951,20 @@ KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -5385,7 +6010,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -5409,15 +6034,29 @@ ClearNotes
 TimeSig 4 4
 MidiEvents { 
 EndTime 16
-Events 5907600 0 0.05 7614864 0 0.05 7485840 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6438288 2 2.05 6371728 2 2.05 6500752 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 
+Events 5907600 0 0.05 7614864 0 0.05 7485840 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6500752 2 2.05 6371728 2 2.05 6438288 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 
 Events 6241680 3 3.05 6438288 3.5 3.55 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 4859024 6 6.05 6438288 6 6.05 6497424 6.5 6.55 6438288 6.5 6.55 6825616 7 7.05 4930960 7 7.05 
-Events 7485840 7.5 7.55 7483792 7.5 7.55 6231696 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 6104720 11 11.05 
+Events 6231696 7.5 7.55 7483792 7.5 7.55 7485840 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 6104720 11 11.05 
 Events 6241680 11 11.05 6438288 11.5 11.55 6497424 12 12.05 4668816 12 12.05 6307216 12.5 12.55 6825616 13 13.05 5258640 13 13.05 5520784 13.5 13.55 4603792 13.75 13.8 4859024 14 14.05 6438288 14 14.05 6497424 14.5 14.55 6438288 14.5 14.55 6825616 15 15.05 4930960 15 15.05 6241680 15.5 15.55 
 Events 8339344 15.75 15.8 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -5463,7 +6102,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -5488,14 +6127,28 @@ TimeSig 4 4
 MidiEvents { 
 EndTime 16
 Events 5907600 0 0.05 7614864 0 0.05 7485840 0 0.05 4668816 0 0.05 6438288 0.5 0.55 6301328 1 1.05 4865424 1 1.05 6438288 1.5 1.55 5324688 1.75 1.8 4990096 2 2.05 6438288 2 2.05 6497424 2.5 2.55 5651856 2.5 2.55 6104720 3 3.05 6241680 3 3.05 6438288 3.5 3.55 
-Events 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 4859024 6 6.05 6438288 6 6.05 7485840 6 6.05 7483792 6 6.05 6497424 6.5 6.55 6438288 6.5 6.55 7485840 6.5 6.55 7483792 6.5 6.55 
-Events 6825616 7 7.05 4930960 7 7.05 8335504 7.5 7.55 6231696 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 
+Events 4997008 3.75 3.8 6497424 4 4.05 4668816 4 4.05 6307216 4.5 4.55 6825616 5 5.05 5258640 5 5.05 5520784 5.5 5.55 4603792 5.75 5.8 4859024 6 6.05 7483792 6 6.05 7485840 6 6.05 6438288 6 6.05 6497424 6.5 6.55 7483792 6.5 6.55 7485840 6.5 6.55 6438288 6.5 6.55 
+Events 6825616 7 7.05 4930960 7 7.05 6231696 7.5 7.55 8335504 7.5 7.55 5907600 8 8.05 8338576 8 8.05 4668816 8 8.05 6438288 8.5 8.55 6301328 9 9.05 4865424 9 9.05 6438288 9.5 9.55 5324688 9.75 9.8 4990096 10 10.05 6438288 10 10.05 6497424 10.5 10.55 5651856 10.5 10.55 
 Events 6104720 11 11.05 6241680 11 11.05 6438288 11.5 11.55 6497424 12 12.05 4668816 12 12.05 6307216 12.5 12.55 6825616 13 13.05 5258640 13 13.05 5520784 13.5 13.55 4603792 13.75 13.8 4859024 14 14.05 6438288 14 14.05 6497424 14.5 14.55 6438288 14.5 14.55 6825616 15 15.05 4930960 15 15.05 
 Events 6241680 15.5 15.55 8339344 15.75 15.8 
 KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -5541,7 +6194,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -5573,6 +6226,20 @@ KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -5618,7 +6285,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -5650,6 +6317,20 @@ KeySign 0 1 0 0
 TimeSig 4 4 0
 Tempo 120 0 0
 }
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
+PercussionLoop 0 0
 autoArticulationHumanizeGroupIndex 4
 autoVelocityHumanizeKitpiece 14
 autoArticulationHumanizeStyle 19
@@ -5695,7 +6376,7 @@ From "Hi-Hat Closed Tip"
 To "Hi-Hat Closed Tip"
 Time 0
 OrgPosIx 2
-LastUsedKey 0
+LastUsedKey 61
 Active 0
 UsingMainKey 1
 LeadUnmapped 0
@@ -5711,7 +6392,7 @@ ClearFillmarkers
 SetCurrentSongTrack 0
 editorVars {
 selectedTab 1
-selectedPosIx 3
+selectedPosIx 2
 selectedArticulationIx -1
 PianoRollVisible 0
 MacroControlsVisible 0
@@ -5725,7 +6406,7 @@ MidiEditAutoScroll 1
 MidiEditPreview 1
 MidiEditRowVisibility 1
 MidiEditZoom 114.979
-MidiEditViewPos 2 0
+MidiEditViewPos 26040 0
 ValuesEditorMode 0 0
 MidiEditTool 1
 MidiEditValuesSize 0 150 150
@@ -5744,7 +6425,7 @@ GridRow 55 55 96 99 100 97 56
 GridRow 51 51 29 30 53 59 76 118 0
 GridRow 57 57 31 104 105 32 58 0
 GridRow 52 52 108 111 112 109 54
-MidiEditNotesWithLength "1,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"
+MidiEditNotesWithLength "1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"
 SongTrackHeight 139
 DrumsMixerPresetName "Hard Rock"
 ChosenPresetTypeName s3presets
@@ -5765,7 +6446,7 @@ ShowKeys 0
 ShowNumbersAndKeys 0
 }
 mixerState {
-currentInstrBoxIx 3
+currentInstrBoxIx 2
 currentPadIx -1
 micAssignmentVisible 0
 channelsVisible 1
@@ -5851,6 +6532,7 @@ STMetronomeOn 0
 EdrumPreset 0 "empty_id" {
 Trafo 129 {
 curve {
+linear 1
 0 0 0
 1 0.06299212574958801 0.06299212574958801
 2 0.2362204790115356 0.2362204790115356
@@ -5864,6 +6546,7 @@ curve {
 }
 Trafo 132 {
 curve {
+linear 1
 0 0 0
 1 0.06299212574958801 0.06299212574958801
 2 0.2362204790115356 0.2362204790115356
@@ -5877,6 +6560,7 @@ curve {
 }
 Trafo 144 {
 curve {
+linear 1
 0 0 0
 1 0.2362204790115356 0.2362204790115356
 2 0.9055117964744568 0.9055117964744568
